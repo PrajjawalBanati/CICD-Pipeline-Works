@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - mvn clean
+      - mvn compile 
+      - mvn test compile
+      - mvn package
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: yes
+  base-directory: target
