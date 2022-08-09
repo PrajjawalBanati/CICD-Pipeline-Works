@@ -59,7 +59,7 @@
 
 - It provides prepackaged build environments for popular programming languages and build tools such as Apache Maven, Gradle, and more.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/AWS-CodeBuild.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/AWS-CodeBuild.png)
 
 - To set up codebuild you need to set up these resources:-
 
@@ -324,7 +324,7 @@
 
 - CodePipeline can also deploy container-based applications to services by using Amazon ECS. Developers can also use the integration points provided with CodePipeline to plug in other tools or services, including build services, test providers, or other deployment targets or systems.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/AWS-CodePipeline.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/AWS-CodePipeline.png)
 - **AWS IAM CodePipeline Role**
 
   - Creates a role that allows to access the services of CodePipeline by the user.
@@ -1063,17 +1063,17 @@ output "git-https-url" {
 
 ### Run `terraform init`
 
-![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Terraform-init.png)
+![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Terraform-init.png)
 
 ### Run `terraform plan`
 
-![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Terraform-plan.png)
+![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Terraform-plan.png)
 
 ### Run `terraform apply`
 
-![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Terraform-apply.png)
+![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Terraform-apply.png)
 
-![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Terraform-Output.png)
+![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Terraform-Output.png)
 
 ## Testing the Pipeline
 
@@ -1087,7 +1087,7 @@ output "git-https-url" {
 
 - After you have made the project be sure that your project must contain the following files. 
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/maven-project.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/maven-project.png)
 
 -   Create a `buildspec.yml` file. This file will run in the CodeBuild and will execute the steps mentioned in here. Insert the following code in the YAML file.
 
@@ -1111,37 +1111,37 @@ output "git-https-url" {
 
 - So after creating the `buildpec.yml` file your directory structure will look like this.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/buildspec.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/buildspec.png)
 http
 - Push the code into CodeCommit Repository.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Push-The-Code.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Push-The-Code.png)
 
 - Now go to AWS WebConsole and open CodePipeline service. You will see the pipeline will get started. It will execute all three stages `Source`, `Build` and `Deploy`.
 
 - `Source`- Will fetch the code from the source repository.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Source-In-Progress.png)
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Source.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Source-In-Progress.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Source.png)
 https:/
 - `Build`- Will execute the phases will create a build and store it as an artifact.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Build-In-Progress.png)
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Build-Completed.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Build-In-Progress.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Build-Completed.png)
 - `Deploy` - Will Deploy the artifact to the elastic beanstalk and will generate an `endpoint-url` with which you can access your application.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Deploy-Progress.png)
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Deploy-Succeeded.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Deploy-Progress.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Deploy-Succeeded.png)
 - Pipeline Executed Successfully.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Complete-Pipeline-succeeded.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/omplete-Pipeline-succeeded.png)
 - So now all stages have been successfully executed and so now you can go to the elastic-beanstalk and can open the url created.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Go-to-beanstalk.png)
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Deployment-URL.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Go-to-beanstalk.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Deployment-URL.png)
 - You will see the application deployed successfully. 
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Application-Deployed.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Application-Deployed.png)
 ## Deploying a Change
 
 - Now our pipeline is working successfully so lets do a change in our `index.html` file and push the change in the Pipeline and lets see that whether that particular change has been deployed or not.
@@ -1164,17 +1164,17 @@ https:/
 
 - Now Push the code into your CodeCommit Repository.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Push-The-Changed-Code.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Push-The-Changed-Code.png)
 - When you successfully pushed the changes just check when you pipelines succeeds.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Pipeline-Change-succeeded.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Pipeline-Change-succeeded.png)
 - After it is succeeded come back to application and refresh the page.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Refresh.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Refresh.png)
 
 - You will now see that the change is deployed automatically.
 
-  ![](https://github.com/krupeshxebia/Xebia-Interns-2020/blob/prajjawal-banati/CICD-Pipeline-Provisioning/Outputs/Change-Deployed.png)
+  ![](https://github.com/PrajjawalBanati/CICD-Pipeline-Works/blob/master/Outputs/Change-Deployed.png)
 **So with the help of CodeCommit, CodeBuild, CodePipeline and Elastic Beanstalk we implemented Continuous Integration and Continuous Deployment Successfully.**
 
 **So here I conclude my log of CICD pipeline Provisioning using Terraform.**
